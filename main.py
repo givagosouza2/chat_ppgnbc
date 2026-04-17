@@ -26,12 +26,11 @@ st.title("Sensora Insight")
 st.caption("Chat com RAG sobre sua produção científica + análise estruturada do CSV")
 
 
-# =========================
-# CONFIGURAÇÃO OPENAI
-# =========================
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+
+client = OpenAI(api_key=OPENAI_API_KEY) if OPENAI_API_KEY else None
 
 # =========================
 # FUNÇÕES AUXILIARES
