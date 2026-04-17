@@ -29,7 +29,7 @@ st.caption("Chat com RAG sobre sua produção científica + análise estruturada
 # =========================
 # CONFIGURAÇÃO OPENAI
 # =========================
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY")) else None
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 
 # =========================
